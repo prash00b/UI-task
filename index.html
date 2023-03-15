@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logoframe">
+                <img class="logo" src="assets/logo.png">
+                <div class="nav-item">
+                    <a href="#">About </a>
+                    <a href="blog.html">Blog</a>  
+                    <a href="#">Contact</a> 
+                </div>
+            </div>
+        </div>
+    <!-- <div class="container2">
+        <div class="box item1">
+            <a href="details.html">
+                <h2 class="project-text" id="project-text1">BLOG <br>1</h2>
+            </a>
+            <div class="product-details">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+
+        <div class="box item2">
+            <a href="details.html">
+                <h2 class="project-text" id="project-text2">BLOG <br>2</h2>
+            </a>
+            <div class="product-details">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+        <div class="box item3">
+            <a href="details.html">
+                <h2 class="project-text" id="project-text3">BLOG <br>2</h2>
+            </a>
+            <div class="product-details">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+        <div class="box item4">
+            <a href="details.html">
+                <h2 class="project-text"  id="project-text4">BLOG <br>4</h2>
+            </a>
+            <div class="product-details">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+            
+        </div>
+        <div class="box item5" >
+            <a href="details.html">
+                <h2 class="project-text">BLOG <br>5</h2>
+            </a>
+            <div class="product-details" id="project-text5">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+        <div class="box item6">
+            <a href="details.html">
+                <h2 class="project-text">BLOG <br>6</h2>
+            </a>
+            <div class="product-details" id="project-text6">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+        <div class="box item7">
+            <a href="details.html">
+            <h2 class="project-text">BLOG <br>7</h2>
+            </a>
+            <div class="product-details" id="project-text7">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+        <div class="box item8">
+            <a href="details.html">
+                <h2 class="project-text" id="project-text8">BLOG <br>8</h2>
+            </a>
+            <div class="product-details">
+                <h2 class="title">Cats</h2>
+                <p class="date">3/15/2023</p>
+                <p class="author"> By John doe</p>
+            </div>
+        </div>
+    </div> -->
+    <div id="container2">
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Your Website Name. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</div>
+</body>
+</html>
+<script src="blogs.js"></script>
+<script>
+    let globalDataRecord = []
+    function getdata(){
+        globalDataRecord = [...blogs]
+    }
+    getdata();
+    const productContainer = document.getElementById(
+        "container2"
+    );
+    
+    globalDataRecord.forEach((item) => {
+    const singleProduct = `
+    <div class="box item">
+        <a href="details.html">
+            <h2 class="project-text" >BLOG <br>1</h2>
+        </a>
+        <div class="product-details">
+            <h2 class="title">${item.title}</h2>
+            <p class="date">Rs.${item.date}</p>
+            <p class="author"> ${item.author}</p>
+        </div>
+    </div>`
+    ;
+            productContainer.innerHTML += singleProduct
+        });
+
+    getProducts();
+</script>

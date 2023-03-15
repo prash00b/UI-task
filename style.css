@@ -1,0 +1,132 @@
+.header{
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+.logoframe{
+    padding: 10px 0;
+    align-items: left;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.logo {
+    display: flex;
+    justify-content:flex-start;
+    border-radius: 10px;
+    height: 50px;
+    width:50px;
+}
+ 
+.nav-item
+{
+    margin: 0 3rem;
+    justify-content: space-around;
+  }
+.nav-item1{
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 4rem;
+}
+
+.container2{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    margin-top:20px;
+    /* grid-template-rows: 100px,100px,100px; */
+}
+.box {
+    width:auto;
+    height :auto;
+    background-color:cornsilk;
+    margin: 10px;
+  }
+
+.footer {
+    background: #1abc9c;
+    color: white;
+    padding: 2rem;
+  }
+
+  .project-text {
+    text-align:center;
+    font-size:50px;
+  }
+
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Color and Images for Project Containers  */
+
+.container2 .box {
+  width:auto;
+  height:auto;
+  background-color:cornsilk;
+  margin: 10px;
+}
+
+
+.item {
+     background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+     background-size: cover;
+}
+
+
+/* .item3 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+}
+
+.item4 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+}
+
+.item5 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+}
+
+.item6 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+}
+
+.item7 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+}
+.item8 {
+    background: url('https://picsum.photos/id/870/200/300?grayscale&blur=2');
+    background-size: cover;
+} */
+.product-details{
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center
+}
+.product-details .date{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.product-details .title{
+    font-size: 1rem;
+    color: #999;
+}
+.product-details .author{
+    font-size: 0.8rem;
+    color: #999;
+}
